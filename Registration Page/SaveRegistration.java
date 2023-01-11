@@ -20,7 +20,41 @@ public class SaveRegistration extends HttpServlet {
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		System.out.println("post");
+		String name = request.getParameter("name");
+		String city = request.getParameter("city");
+		String email = request.getParameter("email");
+	
+		String password = request.getParameter("password");
+		System.out.println(name);
+		System.out.println(city);
+		System.out.println(email);
+		System.out.println(password);
+		
+		
 	}
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
